@@ -3,12 +3,8 @@ using UnityEngine;
 public class SpinMovement : MonoBehaviour
 {
     private float spinSpeed = 50f;
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
+    // Method to rotate the object around its Y-axis
     void Update()
     {
         transform.Rotate(Vector3.up, spinSpeed * Time.deltaTime);
